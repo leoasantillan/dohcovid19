@@ -1,0 +1,38 @@
+footer {
+  background: $light-gray;
+  padding: 18px 0;
+  margin-top: 100px;
+
+  font-size: 11px;
+  color: $gray-text;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $primary !important;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .right {
+    text-align: center;
+  }
+}
+
+@media (max-width: $md) {
+  footer {
+    text-align: center;
+
+    .ant-col {
+      margin: 5px 0;
+    }
+
+    .right {
+      text-align: center;
+    }
+  }
+}

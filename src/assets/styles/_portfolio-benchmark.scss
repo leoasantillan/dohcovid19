@@ -1,0 +1,186 @@
+#portfolio-benchmark {
+  .vs {
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    overflow: hidden;
+
+    .compare {
+      position: absolute;
+      width: 35px;
+      padding: 8px 0;
+      z-index: 1;
+
+      line-height: 1.5;
+      text-align: center;
+      font-family: $bold-font;
+      font-size: 12px;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+      border-radius: 50%;
+
+      background: $blue;
+      color: $white;
+    }
+
+    .investing, .benchmark {
+      padding: 25px 35px;
+      height: 110px;
+
+      .label {
+        color: $bg;
+      }
+
+      h4 {
+        color: $blue;
+        margin: 8px 0 0;
+      }
+    }
+
+    .investing {
+      background: $light-gray;
+    }
+
+    .benchmark {
+      background: $gray;
+
+      .ant-select {
+        margin-top: 12px;
+
+        .anticon {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .graph-option {
+    margin-bottom: 10px;
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+      background-color: transparent;
+    }
+
+    .ant-radio-button-wrapper {
+      margin: 0 1px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      color: $primary;
+      font-family: $base-font;
+
+      transition: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .ant-radio-button-wrapper-checked {
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      box-shadow: none;
+    }
+
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      background: $primary;
+    }
+
+    .currency {
+      text-align: right;
+    }
+  }
+
+  .graph {
+    border-radius: 5px;
+    background: $bg;
+    color: $gray-text;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    .ant-typography {
+      color: $gray-text;
+    }
+
+    .rv-xy-plot {
+      color: $gray-text;
+      margin-top: 25px;
+    }
+
+    .crosshair {
+      width: 250px;
+      padding: 10px;
+      background: $white;
+      border-radius: 5px;
+      text-align: right;
+      margin: 0 5px;
+
+      p {
+        margin: 0;
+      }
+
+      .date {
+        color: $bg;
+        font-family: $base-font;
+        font-size: 11px;
+        margin-bottom: 10px;
+      }
+
+      .label {
+        color: $gray-text;
+        font-family: $base-font;
+        font-size: 11px;
+
+        .square {
+          width: 9px;
+          height: 9px;
+          margin-right: 5px;
+          margin-top: 1px;
+          display: inline-block;
+
+          &.sky-blue {
+            background: $sky-blue;
+          }
+
+          &.yellow {
+            background: $yellow;
+          }
+        }
+      }
+
+      .amt {
+        color: $blue;
+        font-family: $bold-font;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .rv-discrete-color-legend {
+      text-align: center;
+      margin-top: 10px;
+
+      .rv-discrete-color-legend-item {
+        text-align: left;
+        padding: 9px 20px;
+
+        span {
+          display: inline-block;
+          margin-left: 10px;
+          color: $gray-text;
+          white-space: pre-wrap;
+          vertical-align: text-top;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+//--------------------------------asset directory--------------------------------//
+$fonts-dir: "../fonts/";
+
+//--------------------------------colors--------------------------------//
+$black: #000000;
+$white: #FFFFFF;
+
+$bg: #072340;
+
+$primary: #59C5C2;
+$accent: #2BB8E0;
+
+$blue: #3179D4;
+$sky-blue: #45BCE1;
+$yellow: #EEB749;
+$red: #CA1C1C;
+
+$gray: #EAECEF;
+$gray-text: #BCBCBC;
+$light-gray: #F7F7F7;
+
+
+//--------------------------------breakpoint---------------------------//
+$sm: 576px;
+$md: 767px;
+
+//--------------------------------typography---------------------------//
+@font-face {
+    font-family: 'Akkurat Pro';
+    src: url($fonts-dir + 'AkkuratPro-Regular.eot');
+    src: url($fonts-dir + 'AkkuratPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url($fonts-dir + 'AkkuratPro-Regular.woff2') format('woff2'),
+        url($fonts-dir + 'AkkuratPro-Regular.woff') format('woff'),
+        url($fonts-dir + 'AkkuratPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url($fonts-dir + 'Metropolis-Bold.eot');
+    src: url($fonts-dir + 'Metropolis-Bold.eot?#iefix') format('embedded-opentype'),
+        url($fonts-dir + 'Metropolis-Bold.woff2') format('woff2'),
+        url($fonts-dir + 'Metropolis-Bold.woff') format('woff'),
+        url($fonts-dir + 'Metropolis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$base-font: "Akkurat Pro", sans-serif;
+$bold-font: "Metropolis", sans-serif;

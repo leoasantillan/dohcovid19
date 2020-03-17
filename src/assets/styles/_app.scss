@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: $base-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .container {
+    padding: 0 2rem;
+    max-width: 79rem;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: $bold-font;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .logo{
+    width: 120px;
+    float: left;
+
+    img {
+      max-width: 120px;
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  .error-msg {
+    display: block;
+    text-align: center;
+    margin: 35px auto;
+    font-family: $bold-font;
+    color: $red;
+  }
+}
+
+
